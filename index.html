@@ -7,22 +7,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto Portfólio">
-    <meta name="author" content="Generation Brasil">
+    <meta name="author" content="Fernando Cassio">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Universe</title>
 </head>
 
 
 <body>
     
-    <header>
-        <div id="header_content">
-            <div id="titulo">
+    <header class="menu_container">
+        <div id="header_content" class="menu_content">
+            <div id="titulo" class="flex">
                 <a href="#">Universe</a>
             </div>
-            <div id="menu">
-                <ul>
+            <div id="menu" class="flex">
+                <ul class="flex menu_lista">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">Sobre</a></li>
                     <li><a href="#contact">Contate-me</a></li>
@@ -34,17 +35,24 @@
 
 
     <main>
-        <section id="home">
-            <article id="home_texto">
-                <h4>Bem-vindo ao Novo Universo</h4>
-                <h1>Mundos diferentes para pessoas diferentes</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error veniam in voluptatem magni
-                    quisquam</p>
-                <a target="_blank" href="https://github.com/conteudoGeneration" alt="Github da Generation Brasil">
-            </article>
-            <article id="home_imagem">
-                <img src="./assets/img/astronauta.svg" alt="Capacete de Astronauta Animado" width="300">
-            </article>
+        <section id="home" class="home">
+                <article id="home_texto">
+                    <h4>Bem-vindo ao Novo Universo</h4>
+                    <h1>Mundos diferentes para pessoas diferentes</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error veniam in voluptatem magni
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam vero perferendis blanditiis
+                        magni est. Delectus magnam, qui veritatis ea porro voluptatum
+                        dicta ut corporis consequuntur, repellat asperiores quia laborum maxime.
+                        quisquam
+                    </p>
+                    <a class="botao" target="_blank" href="https://github.com/fernandocassiodev" alt="Github da Generation Brasil">
+                        Explorar
+                    </a>
+                </article>
+                <article id="home_imagem">
+                    <img src="./assets/img/astronauta.svg" alt="Capacete de Astronauta Animado" width="300">
+                </article>
         </section>
 
 
