@@ -93,7 +93,7 @@ body {
 /*home*/
 
 .home{
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -213,6 +213,7 @@ form{
 
 form label{
   font-size: 20px;
+  text-align: left;
 }
 
 form input, textarea{
@@ -223,9 +224,29 @@ form input, textarea{
   font-weight: bold;
 }
 
+textarea{
+  resize: none;
+}
+
+form span{
+  margin-bottom: 8px;
+  margin-left: 12px;
+  font-size: 12px;
+  line-height: 16px;
+  color: red;
+}
+
 form button{
   background-color: transparent;
 }
+
+
+.menu_sucess_content{
+  display: flex;
+  align-items: center;
+}
+
+/*Seção rodapé*/
 
 footer{
   background-color: var(--purple-800);
@@ -234,6 +255,6 @@ footer{
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  color: black;
+  color: white;
 }
 
