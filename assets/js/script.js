@@ -44,6 +44,17 @@ async function getApiGithub() {
 formulario.addEventListener("submit", function(event) {
     event.preventDefault();
 
+    const campoNome = document.querySelector("#name")
+    const txtNome = document.querySelector("#txtNome")
+
+    if(campoNome.value.length < 3){
+        txtNome.innerHTML = 'O nome deve ter no minimo 3 caracteres.'
+        campoNome.focus();
+        return;
+    }else{
+        txtNome.innerHTML = ''
+    }
+
     const campoEmail = document.querySelector("#email")
     const txtEmail = document.querySelector("#txtEmail")
     
@@ -55,8 +66,19 @@ formulario.addEventListener("submit", function(event) {
         txtEmail.innerHTML = ''
     }
 
+    const campoSubject = document.querySelector("#subject")
+    const txtSubject = document.querySelector("#subject")
+
+    if(campoSubject.value.length < 5){
+        txtSubject.innerHTML = 'O assunto deve ter pelo menos 5 caracteres.';
+        campoSubject.focus();
+        return;
+    }else{
+        txtSubject.innerHTML = ''
+    }
+
+    //Se todas as validações forem concluidas com êxito, envia o formulário
     formulario.submit();
-    
 });
 
 getApiGithub();
