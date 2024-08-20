@@ -135,6 +135,7 @@ body {
 }
 
 .sobre_container img{
+  width: 300px;
   font-size: 35%;
   border: 5px solid var(--purple-500);
   border-radius: 50%;
@@ -225,3 +226,14 @@ form input, textarea{
 form button{
   background-color: transparent;
 }
+
+footer{
+  background-color: var(--purple-800);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: black;
+}
+
